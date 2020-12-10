@@ -28,7 +28,7 @@ p {
 }
 
 .grid {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0em 1em;
   padding: 1em 0;
 }
@@ -79,7 +79,7 @@ p {
 
 #certificates {
   background-color: #8ca0f4;
-  background-image: url("../assets/bgCircle2.svg");
+  background-image: url("../assets/bgCircle.svg");
   background-attachment: fixed;
   background-size: 160%;
   color: white;
