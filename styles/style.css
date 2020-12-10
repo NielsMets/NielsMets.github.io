@@ -78,10 +78,6 @@ p {
 }
 
 #certificates {
-  background-color: #8ca0f4;
-  background-image: url("../assets/bgCircle.svg");
-  background-attachment: fixed;
-  background-size: 160%;
   color: white;
 }
 
@@ -373,9 +369,6 @@ header .menu-icon .navicon:after {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
-  }
-  #certificates {
-    background-size: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
