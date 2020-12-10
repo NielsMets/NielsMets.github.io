@@ -58,8 +58,7 @@ p {
     margin-top: 6em;
     display: grid;
     gap: 80px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
     img {
         width: 100%;
@@ -239,6 +238,7 @@ header {
             grid-column: 2/5;
         }
         #skill-icons {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-column: 2/5;
         }
     }

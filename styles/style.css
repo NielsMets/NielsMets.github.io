@@ -60,10 +60,8 @@ p {
   display: -ms-grid;
   display: grid;
   gap: 80px;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
 }
 
@@ -285,6 +283,8 @@ header .menu-icon .navicon:after {
     grid-column: 2/5;
   }
   #skills #skill-icons {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-column: 2/5;
