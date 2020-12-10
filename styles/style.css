@@ -378,13 +378,4 @@ header .menu-icon .navicon:after {
     background-size: 100%;
   }
 }
-
-@media (min-width: 2560px) {
-  html {
-    font-size: 13.33pt;
-  }
-  .grid {
-    max-width: 1920px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
