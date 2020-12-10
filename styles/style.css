@@ -5,7 +5,7 @@ html {
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 5em;
 }
 
 h2 {
@@ -24,12 +24,13 @@ h4 {
 p {
   font-size: 2em;
   font-weight: 300;
+  line-height: 115%;
 }
 
 .grid {
   max-width: 1440px;
-  margin: 6em 1em;
-  padding: 1em 0 5em 0;
+  margin: 0em 1em;
+  padding: 1em 0;
 }
 
 .grid h2 {
@@ -48,6 +49,10 @@ p {
   display: flex;
   height: 100vh;
   color: white;
+}
+
+#hero .grid {
+  padding: 15vh 0;
 }
 
 #skill-icons {
@@ -256,6 +261,9 @@ header .menu-icon .navicon:after {
 @media (min-width: 481px) {
   html {
     font-size: 10pt;
+  }
+  h1 {
+    font-size: 6em;
   }
   .grid {
     display: -ms-grid;
