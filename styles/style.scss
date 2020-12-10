@@ -1,0 +1,333 @@
+$menu: #8ca0f4;
+$menu-hover: #8396e0;
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 8pt;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 1.5em;
+    padding-bottom: 2.5em;
+}
+
+p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.grid {
+    max-width: 1440px;
+    margin: 6em 1em;
+    padding: 1em 0 5em 0;
+    h2 {
+        padding-bottom: 0.5em;
+    }
+}
+
+#hero {
+    background-color: $menu;
+    background-image: url("../assets/website-banner-foto.png");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+#skill-icons {
+    margin-top: 6em;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em;
+    img {
+        width: 100%;
+    }
+    .centerSkill {
+        align-self: center;
+    }
+}
+
+
+#certificates {
+    background-color: $menu;
+    background-image: url("../assets/bgCircle2.svg");
+    background-attachment: fixed;
+    background-size: 160%;
+    color: white;
+    ul {
+        li {
+            margin: 5em 0;
+            span {
+                color: rgb(214, 214, 214);
+            }
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    h2 {
+        padding-bottom: 1.8em;
+    }
+}
+
+#contact {
+    .grid {
+        padding: 4em 0;
+    }
+    h3{
+        text-align: center;
+    }
+    .line {
+        width: 4em;
+        border-bottom: 0.22em solid black;
+        margin: 2em auto 3em auto;
+        
+    }
+    .contact-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 12em;
+        margin: auto;
+        a {
+            width: 4em;
+            align-self: flex-end;
+            &:hover {
+                transition: all .2s ease-out;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+header {
+    padding: 1.5em 1em;
+    box-sizing: border-box;
+    background-color: $menu;
+    position: fixed;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .logo {
+        font-size: 2em;
+        align-self: center;
+    }
+    nav {
+        display: none;
+        font-weight: 700;
+        height: 100vh;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;  
+            a {
+                display: block;
+                width: 100vw;
+                text-align: center;
+                padding: 2em 0;
+                font-size: 2em;
+                &:hover {
+                    background-color: $menu-hover;
+                }
+            }
+        }
+    }
+
+    .menu-btn {
+        display: none;
+        &:checked {
+            &~ nav {
+                display: block;
+                background-color: $menu;
+            }
+            &~ .menu-icon .navicon:before {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+            &~ .menu-icon .navicon:after {
+                transform: rotate(45deg);
+                top: 0;
+            }
+            &~ .menu-icon .navicon {
+                background: transparent;
+            }
+        }
+    }
+    .menu-icon {
+        display: inline-block;
+        margin-left: auto;
+        position: relative;
+        align-self: center;
+        .navicon {
+            background: white;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 2em;
+        }
+        .navicon:before, .navicon:after {
+            background: white;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        .navicon:before {
+            top: 0.6em;
+        }
+        .navicon:after {
+            top: -0.6em;
+        } 
+    }
+}
+
+
+//TABLET
+@media (min-width: 481px) {
+    
+    html {
+        font-size: 10pt;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 6em 1em;
+    }
+
+    #hero {
+        height: 90vh;
+        h1 {
+            grid-column: 1/4;
+        }
+        background-size: 80% auto;
+        background-position: 100% 100%;
+    }
+
+    #skills { 
+        #skills-text {
+            grid-column: 2/5;
+        }
+        #skill-icons {
+            grid-column: 2/5;
+        }
+    }
+
+    #certificates {
+        h2 {
+            grid-column: 2/5;
+        }
+        ul {
+            grid-column: 2/5;
+        }
+    }
+
+    #contact {
+        h3{
+            grid-column: 2/4;
+        }
+        .line {
+            grid-column: 2/4;
+        }
+        .contact-icons {
+            grid-column: 2/4;
+        }
+    }
+
+    h4 {
+        padding: 0;
+    }
+}
+
+//PC
+@media (min-width: 1025px) {
+
+    p {
+        font-size: 1.6em;
+    }
+
+    .grid {
+        margin: auto;
+    }
+    
+    header {
+        padding: 0;
+        flex-wrap: nowrap;
+        .menu-icon {
+            display: none;
+        }
+        .logo {
+            padding-left: 30px;
+        }
+        nav {
+            display: block;
+            margin-left: auto;
+            height: auto;
+            ul {
+                display: flex;
+                a {
+                    font-size: 1em;
+                    padding: 1.8em;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    #hero {
+        background-size: auto 75%;
+        h1 {
+            grid-column: 1/3;
+        }
+        background-position: 90% 100%;
+    }
+
+    #skills {
+        #skills-text {
+            grid-column: 2/4;
+        }
+        #skill-icons {
+            grid-column: 2/4;
+        }
+    }
+    #certificates {
+        background-size: 100%;
+    }
+}
+
+//1440p-PC
+@media (min-width: 2560px) {
+
+    html {
+        font-size: 13.33pt;
+    }
+
+    .grid {
+        max-width: 1920px;
+    }
+}
