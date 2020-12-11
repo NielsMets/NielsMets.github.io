@@ -372,4 +372,13 @@ header .menu-icon .navicon:after {
     grid-column: 2/4;
   }
 }
+
+@media (min-width: 2560px) {
+  .grid {
+    max-width: 1440px;
+  }
+  #hero {
+    background-position: 80% 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

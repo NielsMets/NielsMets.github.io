@@ -322,14 +322,13 @@ header {
     }
 }
 
-// //1440p-PC
-// @media (min-width: 2560px) {
+//1440p-PC
+@media (min-width: 2560px) {
 
-//     html {
-//         font-size: 13.33pt;
-//     }
-
-//     .grid {
-//         max-width: 1920px;
-//     }
-// }
+    .grid {
+        max-width: 1440px;
+    }
+    #hero {
+        background-position: 80% 100%;
+    }
+}
