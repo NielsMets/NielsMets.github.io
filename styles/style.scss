@@ -28,6 +28,7 @@ h4 {
   font-weight: 400;
   margin: 0;
 }
+
 button {
   background-color: $button-red;
   color: white;
@@ -158,6 +159,25 @@ button {
   }
   h2 {
     font-size: 40pt;
+  }
+
+  nav {
+    background-color: black;
+    opacity: 85%;
+    color: white;
+    position: fixed;
+    width: 100%;
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0 2em;
+        padding: 0.75em 0.85em;
+      }
+    }
   }
 
   #hero {

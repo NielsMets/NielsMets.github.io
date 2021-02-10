@@ -58,7 +58,7 @@ button {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
 }
 
@@ -112,7 +112,7 @@ button {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     max-width: 1312px;
     margin: auto;
     margin-bottom: 8em;
@@ -131,7 +131,7 @@ button {
   }
   #skills .icon-grid {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
   #skills #dev-icons {
@@ -189,10 +189,32 @@ button {
   h2 {
     font-size: 40pt;
   }
+  nav {
+    background-color: black;
+    opacity: 85%;
+    color: white;
+    position: fixed;
+    width: 100%;
+  }
+  nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 0 2em;
+    padding: 0.75em 0.85em;
+  }
   #hero {
     background-color: white;
     -ms-grid-rows: 1fr 16fr 3fr;
-    grid-template-rows: 1fr 16fr 3fr;
+        grid-template-rows: 1fr 16fr 3fr;
   }
   #hero .pic {
     -ms-grid-column: 7;
