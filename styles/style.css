@@ -1,35 +1,28 @@
 html {
   font-family: futura-pt, sans-serif;
-}
-
-body {
-  margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1 {
   font-weight: 700;
   font-size: 32pt;
-  margin: 0;
 }
 
 h2 {
   font-weight: 700;
   font-size: 26pt;
-  margin: 0;
 }
 
 h3 {
   font-size: 18pt;
-  margin: 0;
 }
 
 h4 {
   font-size: 14pt;
   font-weight: 400;
-  margin: 0;
 }
 
-button {
+.contact-button {
   background-color: #dd4444;
   color: white;
   border: none;
@@ -78,10 +71,10 @@ button {
 }
 
 #hero .pic {
-  background-image: url("../assets/niels-cropped.JPG");
+  background-image: url("../assets/niels2.JPG");
   width: 100%;
   height: 55%;
-  background-size: contain;
+  background-size: auto 55%;
   background-attachment: fixed;
   background-position: center top;
 }
@@ -107,7 +100,125 @@ button {
   color: white;
 }
 
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #2e2e2e;
+  position: fixed;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav {
+  display: none;
+  height: 100vh;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul a {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 1.5em;
+}
+
+header nav ul a:hover {
+  background-color: #4b4b4b;
+}
+
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked ~ nav {
+  display: block;
+  background-color: #2e2e2e;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+header .menu-icon {
+  display: inline-block;
+  margin-left: auto;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+  width: 2em;
+  margin: 1.4em 1em;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+header .menu-icon .navicon:before {
+  top: 0.6em;
+}
+
+header .menu-icon .navicon:after {
+  top: -0.6em;
+}
+
 @media (min-width: 768px) {
+  h1 {
+    font-size: 52pt;
+  }
+  h2 {
+    font-size: 34pt;
+  }
   .main-grid {
     display: -ms-grid;
     display: grid;
@@ -128,6 +239,57 @@ button {
     grid-row: 1/2;
     width: 100%;
     margin-bottom: 0;
+  }
+  header {
+    padding: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header .menu-icon {
+    display: none;
+  }
+  header nav {
+    display: block;
+    margin: auto;
+    height: auto;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul a {
+    font-size: 1em;
+    padding: 1em 2em;
+    width: auto;
+  }
+  #hero {
+    background-color: white;
+    -ms-grid-rows: 1fr 16fr 3fr;
+        grid-template-rows: 1fr 16fr 3fr;
+  }
+  #hero .pic {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    background-attachment: unset;
+    background-size: cover;
+    height: 100%;
+  }
+  #hero .hero-text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding: 0;
+  }
+  #hero .hero-text .sub-title {
+    color: black;
   }
   #skills .icon-grid {
     -ms-grid-columns: 1fr 1fr;
@@ -182,62 +344,12 @@ button {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 64pt;
   }
   h2 {
     font-size: 40pt;
-  }
-  nav {
-    background-color: black;
-    opacity: 85%;
-    color: white;
-    position: fixed;
-    width: 100%;
-  }
-  nav ul {
-    list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    margin: 0 2em;
-    padding: 0.75em 0.85em;
-  }
-  #hero {
-    background-color: white;
-    -ms-grid-rows: 1fr 16fr 3fr;
-        grid-template-rows: 1fr 16fr 3fr;
-  }
-  #hero .pic {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 6;
-    grid-column: 7/13;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    background-attachment: unset;
-    background-size: cover;
-    height: 100%;
-  }
-  #hero .hero-text {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    padding: 0;
-  }
-  #hero .hero-text .sub-title {
-    color: black;
   }
   #certificates h3 {
     font-size: 40pt;
