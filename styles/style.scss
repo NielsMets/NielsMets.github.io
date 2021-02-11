@@ -246,7 +246,7 @@ header {
         display: flex;
         a {
           font-size: 1em;
-          padding: 1em 2em;
+          padding: 1em 2.75em;
           width: auto;
         }
       }
@@ -256,7 +256,7 @@ header {
   .mail-icon {
     display: initial;
     a {
-      padding: 0.5em 1em;
+      padding: 0.5em 2.75em;
       img {
         box-sizing: border-box;
         background-color: $button-red;

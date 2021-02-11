@@ -292,14 +292,14 @@ header .menu-icon .navicon:after {
   }
   header nav ul a {
     font-size: 1em;
-    padding: 1em 2em;
+    padding: 1em 2.75em;
     width: auto;
   }
   .mail-icon {
     display: initial;
   }
   .mail-icon a {
-    padding: 0.5em 1em;
+    padding: 0.5em 2.75em;
   }
   .mail-icon a img {
     -webkit-box-sizing: border-box;
