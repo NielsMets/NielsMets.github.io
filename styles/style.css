@@ -87,17 +87,29 @@ h4 {
   border-bottom: 1px solid white;
 }
 
+#hero .triangle {
+  display: none;
+}
+
 #hero h1 {
   color: white;
 }
 
 #certificates {
-  gap: 4em 0;
+  gap: 4em 2em;
 }
 
 #certificates span {
   background-color: #2e2e2e;
   color: white;
+}
+
+#certificates .triangle {
+  display: none;
+}
+
+#contact .triangle {
+  display: none;
 }
 
 header {
@@ -265,16 +277,16 @@ header .menu-icon .navicon:after {
   }
   #hero {
     background-color: white;
-    -ms-grid-rows: 1fr 16fr 3fr;
-        grid-template-rows: 1fr 16fr 3fr;
+    -ms-grid-rows: 1fr 15fr 1fr 3fr;
+        grid-template-rows: 1fr 15fr 1fr 3fr;
   }
   #hero .pic {
     -ms-grid-column: 7;
     -ms-grid-column-span: 6;
     grid-column: 7/13;
     -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
     background-attachment: unset;
     background-size: cover;
     height: 100%;
@@ -290,6 +302,14 @@ header .menu-icon .navicon:after {
   }
   #hero .hero-text .sub-title {
     color: black;
+  }
+  #hero .triangle {
+    display: initial;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   #skills .icon-grid {
     -ms-grid-columns: 1fr 1fr;
@@ -334,6 +354,17 @@ header .menu-icon .navicon:after {
     grid-column: 2/10;
     font-size: 25pt;
   }
+  #certificates .triangle {
+    display: initial;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 1;
+    grid-column: 11/12;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
   #contact .header-bg {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -341,6 +372,15 @@ header .menu-icon .navicon:after {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/7;
+  }
+  #contact .triangle {
+    display: initial;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 12;
+    -ms-grid-column-span: 1;
+    grid-column: 12/13;
   }
 }
 
