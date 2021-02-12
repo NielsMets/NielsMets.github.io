@@ -396,6 +396,8 @@ header {
   }
 
   #certificates {
-    gap: 4em 2em;
+    .cert-grid {
+      gap: 4em 2em;
+    }
   }
 }

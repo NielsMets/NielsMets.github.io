@@ -459,7 +459,7 @@ header .menu-icon .navicon:after {
   #skills .icon-grid {
     gap: 2em;
   }
-  #certificates {
+  #certificates .cert-grid {
     gap: 4em 2em;
   }
 }
