@@ -106,7 +106,7 @@ p {
   margin: 0.75em 0 1.25em 0;
 }
 
-#certificates {
+#certificates .cert-grid {
   display: -ms-grid;
   display: grid;
   gap: 2em 0;
@@ -355,18 +355,16 @@ header .menu-icon .navicon:after {
     -ms-grid-column-span: 5;
     grid-column: 2/7;
   }
-  #certificates {
+  #certificates .cert-grid {
     display: -ms-grid;
     display: grid;
     gap: 3em 1em;
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
-  }
-  #certificates h3 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 8;
-    grid-column: 2/10;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    grid-row: 2/7;
   }
   #certificates .triangle {
     display: initial;

@@ -103,9 +103,10 @@ p {
 }
 
 #certificates {
-  display: grid;
-  gap: 2em 0;
-
+  .cert-grid {
+    display: grid;
+    gap: 2em 0;
+  }
   span {
     background-color: $cool-black;
     color: white;
@@ -309,12 +310,13 @@ header {
   }
 
   #certificates {
-    display: grid;
-    gap: 3em 1em;
-    grid-column: 2/10;
-    h3 {
+    .cert-grid {
+      display: grid;
+      gap: 3em 1em;
       grid-column: 2/10;
+      grid-row: 2/7;
     }
+
     .triangle {
       display: initial;
       grid-row: 4/5;
