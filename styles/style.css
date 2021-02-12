@@ -5,7 +5,8 @@ html {
 
 h1 {
   font-weight: 700;
-  font-size: 30pt;
+  font-size: 26pt;
+  line-height: 1.3;
 }
 
 h2 {
@@ -107,13 +108,8 @@ p {
 }
 
 #certificates {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
   gap: 2em 0;
 }
 
@@ -259,6 +255,9 @@ header .menu-icon .navicon:after {
   h2 {
     font-size: 34pt;
   }
+  h3 {
+    font-size: 24pt;
+  }
   .main-grid {
     display: -ms-grid;
     display: grid;
@@ -279,6 +278,9 @@ header .menu-icon .navicon:after {
     grid-row: 1/2;
     width: 100%;
     margin-bottom: 0;
+  }
+  #hero {
+    display: block;
   }
   header {
     padding: 0;
@@ -316,42 +318,6 @@ header .menu-icon .navicon:after {
     height: 2em;
     width: 3em;
     padding: 0.3em 0.6em;
-  }
-  #hero {
-    background-color: white;
-    -ms-grid-rows: 1fr 15fr 1fr 3fr;
-        grid-template-rows: 1fr 15fr 1fr 3fr;
-  }
-  #hero .pic {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 6;
-    grid-column: 7/13;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    grid-row: 2/4;
-    background-attachment: unset;
-    background-size: cover;
-    height: 100%;
-  }
-  #hero .hero-text {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    padding: 0;
-  }
-  #hero .hero-text .sub-title {
-    color: black;
-  }
-  #hero .triangle {
-    display: initial;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
   }
   #skills .icon-grid {
     -ms-grid-columns: 1fr 1fr;
@@ -394,12 +360,14 @@ header .menu-icon .navicon:after {
     display: -ms-grid;
     display: grid;
     gap: 3em 1em;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
   }
   #certificates h3 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
-    font-size: 25pt;
   }
   #certificates .triangle {
     display: initial;
@@ -438,23 +406,61 @@ header .menu-icon .navicon:after {
   h2 {
     font-size: 40pt;
   }
+  h3 {
+    font-size: 30pt;
+  }
   p {
     font-size: 20pt;
   }
   .main-grid {
     gap: 4em 2em;
   }
-  .contact-button {
+  #hero {
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    -ms-grid-rows: 1fr 15fr 1fr 3fr;
+        grid-template-rows: 1fr 15fr 1fr 3fr;
+  }
+  #hero .pic {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    background-attachment: unset;
+    background-size: cover;
+    height: 100%;
+  }
+  #hero .hero-text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding: 0;
+  }
+  #hero .hero-text .sub-title {
+    color: black;
+  }
+  #hero .hero-text .contact-button {
     font-size: 20pt;
+  }
+  #hero .triangle {
+    display: initial;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   #skills .icon-grid {
     gap: 2em;
   }
   #certificates {
     gap: 4em 2em;
-  }
-  #certificates h3 {
-    font-size: 40pt;
   }
 }
 /*# sourceMappingURL=style.css.map */
