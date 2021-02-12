@@ -5,7 +5,7 @@ html {
 
 h1 {
   font-weight: 700;
-  font-size: 32pt;
+  font-size: 30pt;
 }
 
 h2 {
@@ -31,9 +31,10 @@ p {
   background-color: #dd4444;
   color: white;
   border: none;
-  font-weight: 600;
-  padding: 1.25em;
+  font-weight: 700;
+  padding: 1em;
   margin: 1.5em 0;
+  font-size: 15pt;
 }
 
 .main-grid {
@@ -82,6 +83,7 @@ p {
   background-size: auto 55%;
   background-attachment: fixed;
   background-position: center top;
+  margin-bottom: 0.5em;
 }
 
 #hero .hero-text {
@@ -244,6 +246,12 @@ header .menu-icon .navicon:after {
   display: none;
 }
 
+@media (min-width: 360px) {
+  h1 {
+    font-size: 32pt;
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 52pt;
@@ -348,7 +356,7 @@ header .menu-icon .navicon:after {
   #skills .icon-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1em;
   }
   #skills #dev-icons {
     -ms-grid-row: 2;
@@ -385,6 +393,7 @@ header .menu-icon .navicon:after {
   #certificates {
     display: -ms-grid;
     display: grid;
+    gap: 3em 1em;
   }
   #certificates h3 {
     -ms-grid-column: 2;
@@ -433,6 +442,15 @@ header .menu-icon .navicon:after {
     font-size: 20pt;
   }
   .main-grid {
+    gap: 4em 2em;
+  }
+  .contact-button {
+    font-size: 20pt;
+  }
+  #skills .icon-grid {
+    gap: 2em;
+  }
+  #certificates {
     gap: 4em 2em;
   }
   #certificates h3 {
