@@ -38,15 +38,19 @@ p {
   font-size: 15pt;
 }
 
+.contact-button:hover {
+  background-color: #f16363;
+}
+
 .main-grid {
   padding: 0em 1em;
-  margin-bottom: 5em;
+  padding-top: 5em;
 }
 
 .main-grid .section-name {
   border-top: 1px solid black;
   width: 50%;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
 }
 
 .header-bg {
@@ -66,6 +70,10 @@ p {
   width: 100%;
 }
 
+.icon-grid .centered-icon {
+  margin: auto;
+}
+
 #dev-icons {
   margin-bottom: 5em;
 }
@@ -74,7 +82,6 @@ p {
   height: 100vh;
   background-color: #2e2e2e;
   padding: 0;
-  margin-bottom: 1.6em;
 }
 
 #hero .pic {
@@ -82,7 +89,7 @@ p {
   width: 100%;
   height: 50%;
   background-size: cover;
-  background-position: center top;
+  background-position: center 1.2em;
   margin-bottom: 0.5em;
 }
 
@@ -100,6 +107,10 @@ p {
 
 #hero h1 {
   color: white;
+}
+
+#skills {
+  padding-top: 3.5em;
 }
 
 #skills p {
@@ -123,6 +134,18 @@ p {
 
 #contact .triangle {
   display: none;
+}
+
+#contact p {
+  margin: 1em 0;
+}
+
+#contact p a {
+  color: #2e2e2e;
+}
+
+#contact p a:hover {
+  color: #dd4444;
 }
 
 header {
@@ -264,8 +287,8 @@ header .menu-icon .navicon:after {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     max-width: 1312px;
     margin: auto;
-    margin-bottom: 8em;
     padding: 0;
+    padding-top: 8em;
     gap: 2em 1em;
   }
   .main-grid .section-name {
@@ -379,6 +402,9 @@ header .menu-icon .navicon:after {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
+  #contact {
+    margin-bottom: 2em;
+  }
   #contact .header-bg {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -389,12 +415,18 @@ header .menu-icon .navicon:after {
   }
   #contact .triangle {
     display: initial;
-    -ms-grid-row: 3;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-column: 12;
+    grid-row: 6/7;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 1;
-    grid-column: 12/13;
+    grid-column: 4/5;
+  }
+  #contact p {
+    margin: 0;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2/7;
   }
 }
 
@@ -429,6 +461,7 @@ header .menu-icon .navicon:after {
     -ms-grid-row-span: 2;
     grid-row: 2/4;
     background-size: cover;
+    background-position: center top;
     height: 100%;
   }
   #hero .hero-text {
