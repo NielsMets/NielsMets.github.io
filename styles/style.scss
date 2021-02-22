@@ -2,6 +2,7 @@ $cool-black: #2e2e2e;
 $cool-black-hover: #4b4b4b;
 $button-red: #dd4444;
 $button-red-hover: #f16363;
+$project: #dedede;
 
 html {
   font-family: futura-pt, sans-serif;
@@ -120,6 +121,24 @@ p {
   }
   .triangle {
     display: none;
+  }
+}
+
+#projects {
+  .project {
+    grid-row: 2/3;
+    background-color: $cool-black;
+    transition: background-color 0.2s ease-out;
+    color: white;
+    height: 20em;
+    width: 100%;
+    text-decoration: none;
+    &:hover {
+      background-color: $cool-black-hover;
+    }
+  }
+  #project1 {
+    grid-column: 2/4;
   }
 }
 
