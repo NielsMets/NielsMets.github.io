@@ -192,6 +192,7 @@ p {
 }
 
 header {
+  z-index: 5;
   box-sizing: border-box;
   background-color: $cool-black;
   position: fixed;

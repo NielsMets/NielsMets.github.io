@@ -211,6 +211,7 @@ p span {
 }
 
 header {
+  z-index: 5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #2e2e2e;
