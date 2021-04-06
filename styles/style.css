@@ -154,6 +154,7 @@ p span {
   text-decoration: none;
   height: 15em;
   overflow: hidden;
+  margin-bottom: 1em;
 }
 
 #projects .project:before {
@@ -164,6 +165,7 @@ p span {
   width: 100%;
   z-index: 1;
   background-position: center 0;
+  background-size: cover;
 }
 
 #projects .project h3,
@@ -191,7 +193,11 @@ p span {
 }
 
 #projects #project1:before {
-  background-image: url("../assets/reac-quote.jpg");
+  background-image: url("../assets/project-quote.jpg");
+}
+
+#projects #project2:before {
+  background-image: url("../assets/project-markdown.jpg");
 }
 
 #contact .triangle {

@@ -138,6 +138,7 @@ p {
     text-decoration: none;
     height: 15em;
     overflow: hidden;
+    margin-bottom: 1em;
     &:before {
       content: "";
       display: block;
@@ -146,6 +147,7 @@ p {
       width: 100%;
       z-index: 1;
       background-position: center 0;
+      background-size: cover;
     }
     h3,
     p {
@@ -171,7 +173,12 @@ p {
   }
   #project1 {
     &:before {
-      background-image: url("../assets/reac-quote.jpg");
+      background-image: url("../assets/project-quote.jpg");
+    }
+  }
+  #project2 {
+    &:before {
+      background-image: url("../assets/project-markdown.jpg");
     }
   }
 }
