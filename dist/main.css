@@ -44,14 +44,52 @@ p {
   font-weight: 300;
 }
 
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.main-grid h2 {
+  grid-column: 1/3;
+}
+
+#hero li {
+  display: flex;
+  grid-column: 1/3;
+}
+#hero h1 {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
 #hero #profile-pic {
+  background-color: gray;
+  height: 200px;
+  grid-row: 2/3;
+  grid-column: 1/3;
+  z-index: -1;
+}
+#hero .contact-email {
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+#projects .project {
+  grid-column: 1/3;
+}
+#projects .project .project-pic {
   background-color: gray;
   height: 200px;
 }
 
-#projects .project .project-pic {
-  background-color: gray;
-  height: 200px;
+#certificates .certificate {
+  grid-column: 1/3;
+}
+
+#contact h3,
+#contact h4,
+#contact a,
+#contact .contact-email {
+  grid-column: 1/3;
 }
 
 /*# sourceMappingURL=main.css.map */
