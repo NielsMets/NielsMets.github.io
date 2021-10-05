@@ -1,5 +1,57 @@
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
 h1 {
-  color: red;
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a {
+  font-weight: 700;
+  color: black;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#hero #profile-pic {
+  background-color: gray;
+  height: 200px;
+}
+
+#projects .project .project-pic {
+  background-color: gray;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
