@@ -1,5 +1,67 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   br {
     display: none;
+  }
+
+  h1 {
+    font-size: 180px;
+  }
+
+  h2 {
+    font-size: 120px;
+  }
+
+  h3 {
+    font-size: 80px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 26px;
+  }
+
+  p,
+  a {
+    font-size: 20px;
+  }
+
+  .main-grid {
+    grid-template-columns: repeat(5, 1fr);
+    h2 {
+      grid-column: 1/6;
+    }
+  }
+
+  #hero {
+    ul {
+      grid-column: 3/6;
+    }
+
+    h1 {
+      grid-column: 1/6;
+    }
+
+    #profile-pic {
+      grid-column: 3/6;
+    }
+  }
+
+  #tools {
+    .tool {
+      h3 {
+        border-bottom-width: 5px;
+      }
+    }
+  }
+
+  #certificates {
+    .certificate {
+      h3 {
+        border-right-width: 5px;
+      }
+    }
   }
 }
