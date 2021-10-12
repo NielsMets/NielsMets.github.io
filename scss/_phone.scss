@@ -16,7 +16,8 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+li {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
@@ -53,6 +54,27 @@ p {
   }
 }
 
+.contact-email {
+  display: flex;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  border: 1px solid black;
+  p {
+    align-self: center;
+    margin-left: 0.75em;
+  }
+  .icon-email {
+    display: flex;
+    border-right: 1px solid black;
+    padding: 0.4em 0.6em;
+    background-color: #d63d3d;
+    img {
+      height: 2em;
+      align-self: center;
+    }
+  }
+}
+
 #hero {
   ul {
     display: flex;
@@ -72,32 +94,36 @@ p {
     grid-column: 1/3;
     z-index: -1;
   }
-
-  .contact-email {
-    grid-row: 3/4;
-    grid-column: 1/3;
-  }
 }
 
 #projects {
   .project {
     grid-column: 1/3;
-    .project-pic {
-      background-color: gray;
-      height: 200px;
-    }
+  }
+  .project-pic {
+    grid-column: 1/3;
+    background-color: gray;
+    height: 200px;
   }
 }
 
 #certificates {
   .certificate {
     grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    h3 {
+      grid-row: 1/3;
+      border-right: 3px solid black;
+      margin-right: 0.5em;
+      padding-right: 0.3em;
+    }
   }
 }
 
 #contact {
   h3,
-  h4,
+  h5,
   a,
   .contact-email {
     grid-column: 1/3;
