@@ -151,7 +151,8 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+li {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
@@ -188,6 +189,27 @@ p {
   grid-column: 1/3;
 }
 
+.contact-email {
+  display: flex;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  border: 1px solid black;
+}
+.contact-email p {
+  align-self: center;
+  margin-left: 0.75em;
+}
+.contact-email .icon-email {
+  display: flex;
+  border-right: 1px solid black;
+  padding: 0.4em 0.6em;
+  background-color: #d63d3d;
+}
+.contact-email .icon-email img {
+  height: 2em;
+  align-self: center;
+}
+
 #hero ul {
   display: flex;
   grid-column: 1/3;
@@ -204,31 +226,75 @@ p {
   grid-column: 1/3;
   z-index: -1;
 }
-#hero .contact-email {
-  grid-row: 3/4;
-  grid-column: 1/3;
-}
 
 #projects .project {
   grid-column: 1/3;
 }
-#projects .project .project-pic {
+#projects .project-pic {
+  grid-column: 1/3;
   background-color: gray;
   height: 200px;
 }
 
 #certificates .certificate {
   grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+#certificates .certificate h3 {
+  grid-row: 1/3;
+  border-right: 3px solid black;
+  margin-right: 0.5em;
+  padding-right: 0.3em;
 }
 
 #contact h3,
-#contact h4,
+#contact h5,
 #contact a,
 #contact .contact-email {
   grid-column: 1/3;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+  .main-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-grid h2 {
+    grid-column: 1/5;
+  }
+
+  #hero ul {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  #hero h1 {
+    grid-column: 1/4;
+  }
+  #hero #profile-pic {
+    grid-column: 2/5;
+  }
+
+  #projects .project {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
+  }
+  #projects .project p {
+    grid-column: 1/3;
+  }
+  #projects .project-pic {
+    grid-column: 2/5;
+    height: 22em;
+  }
+
+  #certificates .certificate:nth-child(odd) {
+    grid-column: 3/5;
+  }
+}
+@media screen and (min-width: 1024px) {
   br {
     display: none;
   }
