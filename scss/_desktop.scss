@@ -4,7 +4,7 @@
   }
 
   h1 {
-    font-size: 180px;
+    font-size: 200px;
   }
 
   h2 {
@@ -41,11 +41,20 @@
     }
 
     h1 {
-      grid-column: 1/6;
+      grid-column: 1/5;
     }
 
     #profile-pic {
       grid-column: 3/6;
+    }
+    .contact-email {
+      width: 70%;
+    }
+  }
+
+  #projects {
+    .project-pic {
+      height: 55vh;
     }
   }
 
@@ -62,6 +71,12 @@
       h3 {
         border-right-width: 5px;
       }
+    }
+  }
+
+  #contact {
+    h3 {
+      border-bottom-width: 5px;
     }
   }
 }
