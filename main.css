@@ -350,8 +350,13 @@ p {
     height: 22em;
   }
 
-  #certificates .certificate:nth-child(odd) {
+  #certificates .certificate:nth-child(5) {
     grid-column: 3/5;
+    grid-row: 2/3;
+  }
+  #certificates .certificate:nth-child(6) {
+    grid-column: 3/5;
+    grid-row: 3/4;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -386,6 +391,7 @@ a {
 
   .main-grid {
     grid-template-columns: repeat(5, 1fr);
+    max-width: 1750px;
   }
   .main-grid h2 {
     grid-column: 1/6;
@@ -410,6 +416,9 @@ a {
 
   #tools .tool h3 {
     border-bottom-width: 5px;
+  }
+  #tools .tool p {
+    margin-bottom: 2em;
   }
 
   #certificates .certificate h3 {
