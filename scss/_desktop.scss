@@ -30,6 +30,7 @@
 
   .main-grid {
     grid-template-columns: repeat(5, 1fr);
+    max-width: 1750px;
     h2 {
       grid-column: 1/6;
     }
@@ -62,6 +63,9 @@
     .tool {
       h3 {
         border-bottom-width: 5px;
+      }
+      p {
+        margin-bottom: 2em;
       }
     }
   }
