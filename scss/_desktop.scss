@@ -38,7 +38,7 @@
     }
   }
 
-  nav {
+  .menu {
     grid-template-columns: 2fr 3fr;
     gap: 20px;
     ul {
@@ -48,7 +48,7 @@
     }
   }
 
-  .menu-burger {
+  .menu-toggle {
     margin-left: 1em;
   }
 
