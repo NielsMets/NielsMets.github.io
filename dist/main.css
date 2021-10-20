@@ -303,8 +303,13 @@ p {
 }
 
 #projects .project {
-  margin-bottom: 4vh;
   grid-column: 1/3;
+}
+#projects .project p {
+  margin-bottom: 4vh;
+}
+#projects .project a {
+  margin-top: 5em;
 }
 #projects .project-pic {
   margin-bottom: 4vh;
@@ -408,9 +413,14 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 2fr;
+    margin-bottom: 4vh;
   }
   #projects .project p {
     grid-column: 1/3;
+    margin-bottom: 0;
+  }
+  #projects .project a {
+    margin-top: 0;
   }
   #projects .project-pic {
     grid-column: 2/5;
@@ -420,7 +430,7 @@ p {
   #certificates {
     grid-auto-flow: column;
   }
-  #certificates .certificate:nth-child(n + 5) {
+  #certificates .certificate:nth-child(n+5) {
     grid-column: 3/5;
   }
 }
@@ -450,7 +460,7 @@ p {
   }
 
   p,
-  a {
+a {
     font-size: 20px;
   }
 

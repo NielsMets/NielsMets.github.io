@@ -175,8 +175,13 @@ p {
 
 #projects {
   .project {
-    margin-bottom: 4vh;
     grid-column: 1/3;
+    p {
+      margin-bottom: 4vh;
+    }
+    a {
+      margin-top: 5em;
+    }
   }
   .project-pic {
     margin-bottom: 4vh;
