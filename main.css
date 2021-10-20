@@ -425,7 +425,8 @@ p {
     grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+    grid-template-rows: 1fr auto 3fr;
     margin-bottom: 4vh;
   }
   #projects .project p {
