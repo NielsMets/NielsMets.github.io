@@ -288,7 +288,7 @@ p {
   margin-bottom: 0.7em;
 }
 #hero #profile-pic {
-  background-image: url(../dist/images/pic.PNG);
+  background-image: url("../dist/images/pic.PNG");
   filter: grayscale(100%);
   opacity: 70%;
   background-size: cover;
@@ -314,8 +314,21 @@ p {
 #projects .project-pic {
   margin-bottom: 4vh;
   grid-column: 1/3;
-  background-color: gray;
   height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#project-1 {
+  background-image: url("../dist/images/project-1.JPG");
+}
+
+#project-2 {
+  background-image: url("../dist/images/project-2.jpg");
+}
+
+#project-3 {
+  background-image: url("../dist/images/project-3.jpg");
 }
 
 #tools .tool {
@@ -411,7 +424,7 @@ p {
   #projects .project {
     grid-column: 1/2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
     margin-bottom: 4vh;
   }
@@ -421,6 +434,7 @@ p {
   }
   #projects .project a {
     margin-top: 0;
+    grid-column: 1/3;
   }
   #projects .project-pic {
     grid-column: 2/5;
