@@ -288,7 +288,7 @@ p {
   margin-bottom: 0.7em;
 }
 #hero #profile-pic {
-  background-image: url(".images/pic.png");
+  background-image: url("./images/pic.png");
   filter: grayscale(100%);
   opacity: 70%;
   background-size: cover;
