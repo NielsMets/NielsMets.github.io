@@ -158,7 +158,7 @@ p {
   }
 
   #profile-pic {
-    background-image: url("../dist/images/pic.png");
+    background-image: url("./images/pic.png");
     filter: grayscale(100%);
     opacity: 70%;
     background-size: cover;
@@ -192,13 +192,13 @@ p {
   }
 }
 #project-1 {
-  background-image: url("../dist/images/project-1.jpg");
+  background-image: url("./images/project-1.jpg");
 }
 #project-2 {
-  background-image: url("../dist/images/project-2.jpg");
+  background-image: url("./images/project-2.jpg");
 }
 #project-3 {
-  background-image: url("../dist/images/project-3.jpg");
+  background-image: url("./images/project-3.jpg");
 }
 
 #tools {
