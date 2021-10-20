@@ -288,6 +288,7 @@ p {
   margin-bottom: 0.7em;
 }
 #hero #profile-pic {
+  background-image: url(".images/pic.png");
   filter: grayscale(100%);
   opacity: 70%;
   background-size: cover;
@@ -319,15 +320,15 @@ p {
 }
 
 #project-1 {
-  background-image: url("../dist/images/project-1.jpg");
+  background-image: url("./images/project-1.jpg");
 }
 
 #project-2 {
-  background-image: url("../dist/images/project-2.jpg");
+  background-image: url("./images/project-2.jpg");
 }
 
 #project-3 {
-  background-image: url("../dist/images/project-3.jpg");
+  background-image: url("./images/project-3.jpg");
 }
 
 #tools .tool {
@@ -443,7 +444,7 @@ p {
   #certificates {
     grid-auto-flow: column;
   }
-  #certificates .certificate:nth-child(n+5) {
+  #certificates .certificate:nth-child(n + 5) {
     grid-column: 3/5;
   }
 }
@@ -473,7 +474,7 @@ p {
   }
 
   p,
-a {
+  a {
     font-size: 20px;
   }
 
