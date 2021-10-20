@@ -445,7 +445,7 @@ p {
   #certificates {
     grid-auto-flow: column;
   }
-  #certificates .certificate:nth-child(n + 5) {
+  #certificates .certificate:nth-child(n+5) {
     grid-column: 3/5;
   }
 }
@@ -475,7 +475,7 @@ p {
   }
 
   p,
-  a {
+a {
     font-size: 20px;
   }
 
