@@ -1,44 +1,68 @@
-const menuToggle = document.getElementsByClassName("menu-toggle");
-const menuItems = document.getElementById("full-menu").childNodes;
-const contactEmail = document.getElementsByClassName("contact-email");
+class ContactEmail {
+  constructor() {
+    this.contactEmail = document.getElementsByClassName("contact-email");
+    this.events();
+  }
 
-const toggleMenu = () => {
-  const menu = document.getElementsByClassName("menu");
-  menu[0].classList.toggle("menu-open");
-  toggleScroll();
-};
+  events() {
+    for (let i = 0; i < this.contactEmail.length; i++) {
+      this.contactEmail[i].addEventListener(
+        "mouseover",
+        this.emailHoverEnter(i)
+      );
+      this.contactEmail[i].addEventListener(
+        "mouseleave",
+        this.emailHoverExit(i)
+      );
+      this.contactEmail[i].addEventListener("click", this.emailClipboard);
+    }
+  }
 
-const toggleScroll = () => {
-  const body = document.body;
-  body.classList.toggle("no-scroll");
-};
-
-const emailHoverEnter = (i) => {
-  return () => {
-    contactEmail[i].children[1].textContent = "Click to copy!";
+  emailHoverEnter = (i) => {
+    return () => {
+      this.contactEmail[i].children[1].textContent = "Click to copy!";
+    };
   };
-};
 
-const emailHoverExit = (i) => {
-  return () => {
-    contactEmail[i].children[1].textContent = "Metsniels@gmail.com";
+  emailHoverExit = (i) => {
+    return () => {
+      this.contactEmail[i].children[1].textContent = "Metsniels@gmail.com";
+    };
   };
-};
 
-const emailClipboard = () => {
-  navigator.clipboard.writeText("metsniels@gmail.com");
-};
-
-for (let i = 0; i < menuToggle.length; i++) {
-  menuToggle[i].addEventListener("click", toggleMenu);
+  emailClipboard = () => {
+    navigator.clipboard.writeText("metsniels@gmail.com");
+  };
 }
 
-for (let i = 0; i < menuItems.length; i++) {
-  menuItems[i].addEventListener("click", toggleMenu);
+class Menu {
+  constructor() {
+    this.menuToggle = document.getElementsByClassName("menu-toggle");
+    this.menuItems = document.getElementById("full-menu").childNodes;
+    this.menu = document.getElementsByClassName("menu");
+    this.body = document.body;
+    this.events();
+  }
+
+  events() {
+    for (let i = 0; i < this.menuToggle.length; i++) {
+      this.menuToggle[i].addEventListener("click", this.toggleMenu);
+    }
+
+    for (let i = 0; i < this.menuItems.length; i++) {
+      this.menuItems[i].addEventListener("click", this.toggleMenu);
+    }
+  }
+
+  toggleMenu = () => {
+    this.menu[0].classList.toggle("menu-open");
+    toggleScroll();
+  };
+
+  toggleScroll = () => {
+    this.body.classList.toggle("no-scroll");
+  };
 }
 
-for (let i = 0; i < contactEmail.length; i++) {
-  contactEmail[i].addEventListener("mouseover", emailHoverEnter(i));
-  contactEmail[i].addEventListener("mouseleave", emailHoverExit(i));
-  contactEmail[i].addEventListener("click", emailClipboard);
-}
+const menu = new Menu();
+const contactEmail = new ContactEmail();
