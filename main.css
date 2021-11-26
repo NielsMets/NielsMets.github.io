@@ -207,7 +207,6 @@ p {
   margin-top: 0.5em;
   margin-left: 0.5em;
   width: 2em;
-  transition-duration: 0.3s;
 }
 .menu-toggle:hover {
   transform: scaleX(1.2);
@@ -218,18 +217,27 @@ p {
 }
 
 .menu {
-  display: none;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   background-color: #080808;
   width: 100%;
-  height: 100vh;
+  height: 0vh;
   position: fixed;
+  transition-duration: 0.4s;
+  visibility: hidden;
+}
+.menu .menu-toggle {
+  z-index: 3;
+  visibility: hidden;
 }
 .menu .menu-toggle:hover {
   transform: scale(1.2);
 }
 .menu ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.7s linear;
   margin: 5em 0.5em 0.5em 0.5em;
 }
 .menu ul a {
@@ -245,7 +253,15 @@ p {
 }
 
 .menu-open {
-  display: grid;
+  height: 100vh;
+  visibility: unset;
+}
+.menu-open .menu-toggle {
+  visibility: unset;
+}
+.menu-open ul {
+  visibility: unset;
+  opacity: 100;
 }
 
 .contact-email {
@@ -477,11 +493,6 @@ p {
   p,
 a {
     font-size: 20px;
-  }
-
-  body {
-    max-width: 1920px;
-    margin: auto;
   }
 
   .main-grid {
