@@ -28,11 +28,6 @@
     font-size: 20px;
   }
 
-  body {
-    max-width: 1920px;
-    margin: auto;
-  }
-
   .main-grid {
     grid-template-columns: repeat(5, 1fr);
     max-width: 1750px;
