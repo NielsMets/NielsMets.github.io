@@ -56,7 +56,7 @@ class Menu {
 
   toggleMenu = () => {
     this.menu[0].classList.toggle("menu-open");
-    toggleScroll();
+    this.toggleScroll();
   };
 
   toggleScroll = () => {

@@ -218,18 +218,22 @@ p {
 }
 
 .menu {
-  display: none;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   background-color: #080808;
   width: 100%;
-  height: 100vh;
+  height: 0vh;
   position: fixed;
+}
+.menu .menu-toggle {
+  display: none;
 }
 .menu .menu-toggle:hover {
   transform: scale(1.2);
 }
 .menu ul {
+  display: none;
   margin: 5em 0.5em 0.5em 0.5em;
 }
 .menu ul a {
@@ -245,7 +249,13 @@ p {
 }
 
 .menu-open {
-  display: grid;
+  height: 100vh;
+}
+.menu-open .menu-toggle {
+  display: block;
+}
+.menu-open ul {
+  display: block;
 }
 
 .contact-email {
