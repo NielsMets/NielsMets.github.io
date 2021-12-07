@@ -35,34 +35,34 @@ class ContactEmail {
   };
 }
 
-// class Menu {
-//   constructor() {
-//     this.menuToggle = document.getElementsByClassName("menu-toggle");
-//     this.menuItems = document.getElementById("full-menu").childNodes;
-//     this.menu = document.getElementsByClassName("menu");
-//     this.body = document.body;
-//     this.events();
-//   }
+class Menu {
+  constructor() {
+    this.menuToggle = document.getElementsByClassName("menu-toggle");
+    this.menuItems = document.getElementById("full-menu").childNodes;
+    this.menu = document.getElementsByClassName("menu");
+    this.body = document.body;
+    this.events();
+  }
 
-//   events() {
-//     for (let i = 0; i < this.menuToggle.length; i++) {
-//       this.menuToggle[i].addEventListener("click", this.toggleMenu);
-//     }
+  events() {
+    for (let i = 0; i < this.menuToggle.length; i++) {
+      this.menuToggle[i].addEventListener("click", this.toggleMenu);
+    }
 
-//     for (let i = 0; i < this.menuItems.length; i++) {
-//       this.menuItems[i].addEventListener("click", this.toggleMenu);
-//     }
-//   }
+    for (let i = 0; i < this.menuItems.length; i++) {
+      this.menuItems[i].addEventListener("click", this.toggleMenu);
+    }
+  }
 
-//   toggleMenu = () => {
-//     this.menu[0].classList.toggle("menu-open");
-//     this.toggleScroll();
-//   };
+  toggleMenu = () => {
+    this.menu[0].classList.toggle("menu-open");
+    this.toggleScroll();
+  };
 
-//   toggleScroll = () => {
-//     this.body.classList.toggle("no-scroll");
-//   };
-// }
+  toggleScroll = () => {
+    this.body.classList.toggle("no-scroll");
+  };
+}
 
-// const menu = new Menu();
+const menu = new Menu();
 const contactEmail = new ContactEmail();

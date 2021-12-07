@@ -16,7 +16,6 @@ h3,
 h5,
 h6,
 p,
-a,
 li {
   font-weight: 300;
 }
@@ -60,96 +59,55 @@ html {
   display: grid;
   grid-auto-rows: minmax(min-content, max-content);
   gap: 10px;
-  margin: 10px;
+  margin: 0 10px;
+  padding-top: 1em;
   h2 {
     margin-bottom: 0.5em;
   }
 }
 
-// .menu-toggle {
-//   position: fixed;
-//   margin-top: 0.5em;
-//   margin-left: 0.5em;
-//   width: 2em;
-//   &:hover {
-//     transform: scaleX(1.2);
-//   }
-//   img {
-//     display: block;
-//     margin: auto;
-//   }
-// }
-
 header {
   background-color: #442e83;
   position: fixed;
-  bottom: 0;
   width: 100%;
-  ul {
+  bottom: 0;
+  #full-menu {
     display: none;
   }
-  .phone-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    & * {
-      margin: auto;
-      img {
-        height: 7vh;
-        box-sizing: border-box;
-        padding: 8px;
-      }
+}
+.phone-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  & * {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.menu-open {
+  height: 100vh;
+  nav {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 7vh;
+    #full-menu {
+      display: flex;
     }
   }
 }
-// .menu {
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   gap: 20px;
-//   background-color: rgb(8, 8, 8);
-//   width: 100%;
-//   height: 0vh;
-//   position: fixed;
-//   transition-duration: 0.4s;
-//   visibility: hidden;
-//   .menu-toggle {
-//     z-index: 3;
-//     visibility: hidden;
-//     &:hover {
-//       transform: scale(1.2);
-//     }
-//   }
-//   ul {
-//     visibility: hidden;
-//     opacity: 0;
-//     transition: visibility 0s, opacity 0.7s linear;
 
-//     margin: 5em 0.5em 0.5em 0.5em;
-//     a {
-//       color: #d63d3d;
-//       text-decoration: none;
-//       &:hover {
-//         text-decoration: underline;
-//       }
-//     }
-//     h2 {
-//       margin-bottom: 1em;
-//       color: white;
-//     }
-//   }
-// }
-
-// .menu-open {
-//   height: 100vh;
-//   visibility: unset;
-//   .menu-toggle {
-//     visibility: unset;
-//   }
-//   ul {
-//     visibility: unset;
-//     opacity: 100;
-//   }
-// }
+.icon-email {
+  display: flex;
+  padding: 0.4em 0.6em;
+  background-color: #442e83;
+  img {
+    height: 2em;
+    width: 2em;
+  }
+}
 
 .contact-email {
   display: flex;
@@ -161,15 +119,6 @@ header {
   p {
     align-self: center;
     margin-left: 0.75em;
-  }
-  .icon-email {
-    display: flex;
-    padding: 0.4em 0.6em;
-    background-color: #442e83;
-    img {
-      height: 2em;
-      align-self: center;
-    }
   }
   &:hover {
     p {
@@ -248,7 +197,6 @@ header {
   }
   grid-template-columns: 1fr 1fr;
   .tool {
-    margin-bottom: 4vh;
     h3 {
       width: 90%;
       border-bottom: 3px solid white;
@@ -269,7 +217,6 @@ header {
     grid-template-columns: 1fr 10fr;
     color: black;
     background-color: white;
-    margin-bottom: 4vh;
     box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2),
       0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
     h3 {
@@ -299,11 +246,4 @@ header {
 
 #contact {
   margin-bottom: 12vh;
-  h3,
-  h5,
-  a,
-  h3 {
-    border-bottom: 3px solid white;
-    width: 38%;
-  }
 }
