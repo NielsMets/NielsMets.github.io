@@ -31,16 +31,18 @@ h4 {
 }
 
 h5,
-a {
+ul {
+  font-size: 12px;
+}
+
+p,
+a,
+button {
   font-size: 16px;
 }
 
 a {
   color: white;
-}
-
-p {
-  font-size: 12px;
 }
 
 html {
@@ -64,89 +66,113 @@ html {
   }
 }
 
-.menu-toggle {
-  position: fixed;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  width: 2em;
-  &:hover {
-    transform: scaleX(1.2);
-  }
-  img {
-    display: block;
-    margin: auto;
-  }
-}
+// .menu-toggle {
+//   position: fixed;
+//   margin-top: 0.5em;
+//   margin-left: 0.5em;
+//   width: 2em;
+//   &:hover {
+//     transform: scaleX(1.2);
+//   }
+//   img {
+//     display: block;
+//     margin: auto;
+//   }
+// }
 
-.menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  background-color: rgb(8, 8, 8);
+header {
+  background-color: #442e83;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 0vh;
-  position: fixed;
-  transition-duration: 0.4s;
-  visibility: hidden;
-  .menu-toggle {
-    z-index: 3;
-    visibility: hidden;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
   ul {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.7s linear;
-
-    margin: 5em 0.5em 0.5em 0.5em;
-    a {
-      color: #d63d3d;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
+    display: none;
+  }
+  .phone-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & * {
+      margin: auto;
+      img {
+        height: 7vh;
+        box-sizing: border-box;
+        padding: 8px;
       }
     }
-    h2 {
-      margin-bottom: 1em;
-      color: white;
-    }
   }
 }
+// .menu {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   gap: 20px;
+//   background-color: rgb(8, 8, 8);
+//   width: 100%;
+//   height: 0vh;
+//   position: fixed;
+//   transition-duration: 0.4s;
+//   visibility: hidden;
+//   .menu-toggle {
+//     z-index: 3;
+//     visibility: hidden;
+//     &:hover {
+//       transform: scale(1.2);
+//     }
+//   }
+//   ul {
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: visibility 0s, opacity 0.7s linear;
 
-.menu-open {
-  height: 100vh;
-  visibility: unset;
-  .menu-toggle {
-    visibility: unset;
-  }
-  ul {
-    visibility: unset;
-    opacity: 100;
-  }
-}
+//     margin: 5em 0.5em 0.5em 0.5em;
+//     a {
+//       color: #d63d3d;
+//       text-decoration: none;
+//       &:hover {
+//         text-decoration: underline;
+//       }
+//     }
+//     h2 {
+//       margin-bottom: 1em;
+//       color: white;
+//     }
+//   }
+// }
+
+// .menu-open {
+//   height: 100vh;
+//   visibility: unset;
+//   .menu-toggle {
+//     visibility: unset;
+//   }
+//   ul {
+//     visibility: unset;
+//     opacity: 100;
+//   }
+// }
 
 .contact-email {
   display: flex;
   grid-column: 1/2;
   color: black;
   background-color: white;
-  h6 {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2), 0px 10px 14px rgba(0, 0, 0, 0.14),
+    0px 4px 18px rgba(0, 0, 0, 0.12);
+  p {
     align-self: center;
     margin-left: 0.75em;
   }
   .icon-email {
     display: flex;
     padding: 0.4em 0.6em;
-    background-color: #d63d3d;
+    background-color: #442e83;
     img {
       height: 2em;
       align-self: center;
     }
   }
   &:hover {
-    h6 {
+    p {
       font-weight: 700;
     }
   }
@@ -158,7 +184,6 @@ html {
   ul {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
   }
 
   h1 {
@@ -170,11 +195,14 @@ html {
   #profile-pic {
     background-image: url("./images/pic.png");
     filter: grayscale(100%);
-    opacity: 70%;
+    opacity: 65%;
     background-size: cover;
+    background-position: center;
     height: 50vh;
     grid-row: 2/3;
     z-index: -1;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2),
+      0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
   }
   .contact-email {
     display: none;
@@ -186,6 +214,9 @@ html {
   .project {
     background-color: white;
     color: black;
+    height: 445px;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2),
+      0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
     p {
       margin-bottom: 4vh;
     }
@@ -195,8 +226,7 @@ html {
     }
     .project-pic {
       margin-bottom: 4vh;
-
-      height: 40vh;
+      height: 40%;
       background-size: cover;
       background-position: center;
     }
@@ -240,6 +270,8 @@ html {
     color: black;
     background-color: white;
     margin-bottom: 4vh;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2),
+      0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
     h3 {
       font-size: 40px;
       grid-row: 1/2;
@@ -252,7 +284,7 @@ html {
       color: white;
       padding: 0.4em;
     }
-    h5 {
+    p {
       grid-row: 2/3;
       grid-column: 2/3;
     }
@@ -266,15 +298,12 @@ html {
 }
 
 #contact {
-  margin-bottom: 5vh;
+  margin-bottom: 12vh;
   h3,
   h5,
   a,
   h3 {
     border-bottom: 3px solid white;
     width: 38%;
-  }
-  h5 {
-    margin-bottom: 3em;
   }
 }

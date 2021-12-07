@@ -4,7 +4,7 @@
   }
 
   h2 {
-    font-size: 70px;
+    font-size: 48px;
   }
 
   h6 {
@@ -20,15 +20,32 @@
     }
   }
 
-  .menu {
-    nav {
-      margin: 5em 0 0 9vw;
+  header {
+    top: 0;
+    bottom: auto;
+    .phone-menu {
+      display: none;
+    }
+    ul {
+      font-size: 16px;
+      width: 66%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      li {
+        padding: 0.8em;
+      }
     }
   }
+  // .menu {
+  //   nav {
+  //     margin: 5em 0 0 9vw;
+  //   }
+  // }
 
-  .menu-toggle {
-    margin-top: 1em;
-  }
+  // .menu-toggle {
+  //   margin-top: 1em;
+  // }
 
   .contact-email {
     grid-column: 1/3;

@@ -166,16 +166,18 @@ h4 {
 }
 
 h5,
-a {
+ul {
+  font-size: 12px;
+}
+
+p,
+a,
+button {
   font-size: 16px;
 }
 
 a {
   color: white;
-}
-
-p {
-  font-size: 12px;
 }
 
 html {
@@ -199,66 +201,27 @@ html {
   margin-bottom: 0.5em;
 }
 
-.menu-toggle {
+header {
+  background-color: #442e83;
   position: fixed;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  width: 2em;
+  bottom: 0;
+  width: 100%;
 }
-.menu-toggle:hover {
-  transform: scaleX(1.2);
+header ul {
+  display: none;
 }
-.menu-toggle img {
-  display: block;
+header .phone-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .phone-menu * {
   margin: auto;
 }
-
-.menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  background-color: #080808;
-  width: 100%;
-  height: 0vh;
-  position: fixed;
-  transition-duration: 0.4s;
-  visibility: hidden;
-}
-.menu .menu-toggle {
-  z-index: 3;
-  visibility: hidden;
-}
-.menu .menu-toggle:hover {
-  transform: scale(1.2);
-}
-.menu ul {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.7s linear;
-  margin: 5em 0.5em 0.5em 0.5em;
-}
-.menu ul a {
-  color: #d63d3d;
-  text-decoration: none;
-}
-.menu ul a:hover {
-  text-decoration: underline;
-}
-.menu ul h2 {
-  margin-bottom: 1em;
-  color: white;
-}
-
-.menu-open {
-  height: 100vh;
-  visibility: unset;
-}
-.menu-open .menu-toggle {
-  visibility: unset;
-}
-.menu-open ul {
-  visibility: unset;
-  opacity: 100;
+header .phone-menu * img {
+  height: 7vh;
+  box-sizing: border-box;
+  padding: 8px;
 }
 
 .contact-email {
@@ -266,21 +229,22 @@ html {
   grid-column: 1/2;
   color: black;
   background-color: white;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2), 0px 10px 14px rgba(0, 0, 0, 0.14), 0px 4px 18px rgba(0, 0, 0, 0.12);
 }
-.contact-email h6 {
+.contact-email p {
   align-self: center;
   margin-left: 0.75em;
 }
 .contact-email .icon-email {
   display: flex;
   padding: 0.4em 0.6em;
-  background-color: #d63d3d;
+  background-color: #442e83;
 }
 .contact-email .icon-email img {
   height: 2em;
   align-self: center;
 }
-.contact-email:hover h6 {
+.contact-email:hover p {
   font-weight: 700;
 }
 
@@ -291,7 +255,6 @@ html {
 #hero ul {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
 }
 #hero h1 {
   grid-row: 3/4;
@@ -301,11 +264,13 @@ html {
 #hero #profile-pic {
   background-image: url("./images/pic.png");
   filter: grayscale(100%);
-  opacity: 70%;
+  opacity: 65%;
   background-size: cover;
+  background-position: center;
   height: 50vh;
   grid-row: 2/3;
   z-index: -1;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
 #hero .contact-email {
   display: none;
@@ -315,6 +280,8 @@ html {
 #projects .project {
   background-color: white;
   color: black;
+  height: 445px;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
 #projects .project p {
   margin-bottom: 4vh;
@@ -325,7 +292,7 @@ html {
 }
 #projects .project .project-pic {
   margin-bottom: 4vh;
-  height: 40vh;
+  height: 40%;
   background-size: cover;
   background-position: center;
 }
@@ -369,6 +336,7 @@ html {
   color: black;
   background-color: white;
   margin-bottom: 4vh;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
 #certificates .certificate h3 {
   font-size: 40px;
@@ -382,7 +350,7 @@ html {
   color: white;
   padding: 0.4em;
 }
-#certificates .certificate h5 {
+#certificates .certificate p {
   grid-row: 2/3;
   grid-column: 2/3;
 }
@@ -394,7 +362,7 @@ html {
 }
 
 #contact {
-  margin-bottom: 5vh;
+  margin-bottom: 12vh;
 }
 #contact h3,
 #contact h5,
@@ -403,9 +371,6 @@ html {
   border-bottom: 3px solid white;
   width: 38%;
 }
-#contact h5 {
-  margin-bottom: 3em;
-}
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -413,7 +378,7 @@ html {
   }
 
   h2 {
-    font-size: 70px;
+    font-size: 48px;
   }
 
   h6 {
@@ -429,12 +394,22 @@ html {
     grid-column: 1/3;
   }
 
-  .menu nav {
-    margin: 5em 0 0 9vw;
+  header {
+    top: 0;
+    bottom: auto;
   }
-
-  .menu-toggle {
-    margin-top: 1em;
+  header .phone-menu {
+    display: none;
+  }
+  header ul {
+    font-size: 16px;
+    width: 66%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  header ul li {
+    padding: 0.8em;
   }
 
   .contact-email {
@@ -473,22 +448,20 @@ html {
     font-size: 120px;
   }
 
-  h2 {
-    font-size: 48px;
-  }
-
   h3 {
     font-size: 60px;
   }
 
-  h5,
-a {
+  p,
+a,
+button {
     font-size: 18px;
   }
 
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1290px;
+    gap: 30px;
     margin: 2em auto 6em auto;
   }
   .main-grid h2 {
@@ -496,16 +469,9 @@ a {
     margin-bottom: 0.8em;
   }
 
-  .menu {
-    grid-template-columns: 2fr 3fr;
-    gap: 20px;
-  }
-  .menu ul h2 {
-    margin-bottom: 0.5em;
-  }
-
-  .menu-toggle {
-    margin-left: 1em;
+  header ul {
+    width: 50%;
+    font-size: 18px;
   }
 
   .contact-email {
