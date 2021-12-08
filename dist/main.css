@@ -156,7 +156,7 @@ li {
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 4.125rem;
 }
 
 h4 {
@@ -166,7 +166,7 @@ h4 {
 
 h5,
 ul {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 p,
@@ -324,7 +324,7 @@ html {
   flex-direction: column;
   background-color: white;
   color: black;
-  height: 445px;
+  height: 28rem;
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
 #projects .project h4,
@@ -432,11 +432,11 @@ html {
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   h6 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .no-scroll {
@@ -475,7 +475,7 @@ html {
     font-weight: 300;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     margin: unset;
   }
   .menu nav #full-menu a:hover {
@@ -521,28 +521,32 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
   br {
     display: none;
   }
 
   h1 {
-    font-size: 120px;
+    font-size: 7.5rem;
   }
 
   h3 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   p,
 a,
 button {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1290px;
-    gap: 40px 30px;
+    max-width: 80.625rem;
+    gap: 2.5rem 1.875rem;
     margin: 2em auto 6em auto;
   }
   .main-grid h2 {
@@ -550,8 +554,8 @@ button {
     margin-bottom: 0.8em;
   }
 
-  header ul {
-    width: 50%;
+  .menu nav #full-menu {
+    width: 60rem;
   }
 
   .contact-email {
@@ -562,6 +566,7 @@ button {
     margin-top: 6em;
   }
   #hero ul {
+    width: 75%;
     grid-row: 1/2;
     grid-column: 2/3;
   }
@@ -571,7 +576,7 @@ button {
   #hero #profile-pic {
     grid-column: 2/3;
     grid-row: 2/4;
-    height: 65vh;
+    height: 43rem;
   }
   #hero .contact-email {
     margin-top: auto;
@@ -584,16 +589,10 @@ button {
   #projects h2 {
     grid-column: 1/4;
   }
-  #projects .project-pic {
-    height: 45vh;
-  }
-
-  #certificates .certificate h3 {
-    border-right-width: 5px;
-  }
-
-  #contact h3 {
-    border-bottom-width: 5px;
+}
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 20px;
   }
 }
 
