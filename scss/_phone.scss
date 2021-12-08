@@ -66,33 +66,41 @@ html {
   }
 }
 
-header {
+.menu {
   background-color: #442e83;
   position: fixed;
   width: 100%;
   bottom: 0;
-  #full-menu {
-    display: none;
+  nav {
+    height: 100%;
+    grid-template-rows: auto 7vh;
+    #full-menu {
+      display: none;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        font-size: 48px;
+        margin: 0.4em 10px;
+      }
+    }
   }
-}
-.phone-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 7vh;
-  & * {
-    width: 30%;
-    margin: auto;
-    text-align: center;
+  .phone-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    & * {
+      width: 30%;
+      margin: auto;
+      text-align: center;
+    }
   }
 }
 
 .menu-open {
   height: 100vh;
   nav {
-    height: 100%;
     display: grid;
-    grid-template-rows: auto 7vh;
     #full-menu {
       display: flex;
     }

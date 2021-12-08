@@ -201,23 +201,32 @@ html {
   margin-bottom: 0.5em;
 }
 
-header {
+.menu {
   background-color: #442e83;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
-header #full-menu {
-  display: none;
+.menu nav {
+  height: 100%;
+  grid-template-rows: auto 7vh;
 }
-
-.phone-menu {
+.menu nav #full-menu {
+  display: none;
+  flex-direction: column;
+}
+.menu nav #full-menu a {
+  text-decoration: none;
+  font-size: 48px;
+  margin: 0.4em 10px;
+}
+.menu .phone-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 7vh;
 }
-.phone-menu * {
+.menu .phone-menu * {
   width: 30%;
   margin: auto;
   text-align: center;
@@ -227,9 +236,7 @@ header #full-menu {
   height: 100vh;
 }
 .menu-open nav {
-  height: 100%;
   display: grid;
-  grid-template-rows: auto 7vh;
 }
 .menu-open nav #full-menu {
   display: flex;
@@ -400,38 +407,34 @@ header #full-menu {
     grid-column: 1/3;
   }
 
-  header,
-.menu {
+  .menu {
     top: 0;
     bottom: auto;
     height: unset;
   }
-  header .phone-menu,
-.menu .phone-menu {
+  .menu .phone-menu {
     display: none;
   }
-  header nav,
-.menu nav {
+  .menu nav {
     display: block;
   }
-  header #full-menu,
-.menu #full-menu {
+  .menu nav #full-menu {
     display: flex;
+    flex-direction: row;
     height: unset;
     width: 66%;
     margin: auto;
     justify-content: space-around;
   }
-  header #full-menu a,
-.menu #full-menu a {
+  .menu nav #full-menu a {
     padding: 0.7em;
-    text-decoration: none;
     font-weight: 300;
     width: 100%;
     text-align: center;
+    font-size: 16px;
+    margin: unset;
   }
-  header #full-menu a:hover,
-.menu #full-menu a:hover {
+  .menu nav #full-menu a:hover {
     font-weight: 700;
   }
 
@@ -440,7 +443,7 @@ header #full-menu {
   }
 
   #hero {
-    margin-top: 5em;
+    margin-top: 3em;
   }
   #hero ul {
     grid-column: 2/3;
