@@ -6,8 +6,16 @@ class ContactEmail {
 
   events() {
     for (let i = 0; i < this.copyEmail.length; i++) {
-      this.copyEmail[i].addEventListener("mouseover", this.emailHoverEnter(i));
-      this.copyEmail[i].addEventListener("mouseleave", this.emailHoverExit(i));
+      if (!this.copyEmail[i].classList.contains("icon-email")) {
+        this.copyEmail[i].addEventListener(
+          "mouseover",
+          this.emailHoverEnter(i)
+        );
+        this.copyEmail[i].addEventListener(
+          "mouseleave",
+          this.emailHoverExit(i)
+        );
+      }
       this.copyEmail[i].addEventListener("click", this.emailClipboard);
     }
   }
