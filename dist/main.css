@@ -355,24 +355,32 @@ html {
 #tools h2 {
   grid-column: 1/3;
 }
+#tools .tool {
+  display: flex;
+  flex-direction: column;
+}
 #tools .tool h3 {
   width: 90%;
   border-bottom: 3px solid white;
 }
-#tools .tool h5 {
-  margin: 0.3em 0 1em 0;
+#tools .tool h4 {
+  margin: 0.3em 0 0.6em 0;
 }
 #tools .tool p {
   margin-bottom: 1em;
-  min-height: 4em;
+  min-height: 5em;
 }
 #tools .tool a {
   margin-top: auto;
 }
 
 #certificates .certificate {
+  min-height: 10%;
+  padding: 1.5em;
   display: grid;
+  gap: 10px;
   grid-template-columns: 1fr 10fr;
+  grid-auto-rows: minmax(min-content, max-content);
   color: black;
   background-color: white;
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
@@ -420,7 +428,7 @@ html {
   .main-grid {
     grid-template-columns: 1fr 1fr;
     gap: 35px 20px;
-    margin: 0 40px;
+    margin: 2em 40px;
     padding-top: 4em;
   }
   .main-grid h2 {
@@ -459,10 +467,6 @@ html {
     display: none;
   }
 
-  .contact-email {
-    grid-column: 1/3;
-  }
-
   #hero {
     box-sizing: border-box;
   }
@@ -489,6 +493,13 @@ html {
   #tools h2 {
     grid-column: 1/5;
   }
+  #tools .tool {
+    margin-bottom: 2em;
+  }
+
+  #contact {
+    margin-bottom: 12vh;
+  }
 }
 @media screen and (min-width: 1200px) {
   br {
@@ -512,7 +523,7 @@ button {
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1290px;
-    gap: inherit 30px;
+    gap: 40px 30px;
     margin: 2em auto 6em auto;
   }
   .main-grid h2 {
@@ -525,7 +536,7 @@ button {
   }
 
   .contact-email {
-    grid-column: 1/2;
+    width: 66%;
   }
 
   #hero ul {
@@ -547,13 +558,6 @@ button {
   }
   #projects .project-pic {
     height: 45vh;
-  }
-
-  #tools .tool h3 {
-    border-bottom-width: 5px;
-  }
-  #tools .tool p {
-    margin-bottom: 2em;
   }
 
   #certificates .certificate h3 {
