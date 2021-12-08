@@ -235,19 +235,6 @@ html {
   text-align: center;
   padding: 0;
 }
-.menu nav .phone-menu * .email-popup {
-  display: none;
-  position: fixed;
-  bottom: 8vh;
-  right: 2vw;
-  color: black;
-  background-color: white;
-  padding: 0.5em;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2), 0px 10px 14px rgba(0, 0, 0, 0.14), 0px 4px 18px rgba(0, 0, 0, 0.12);
-}
-.menu nav .phone-menu .copy-email:hover .email-popup {
-  display: block;
-}
 
 .menu-open nav {
   display: grid;
@@ -562,6 +549,7 @@ button {
     margin-top: 6em;
   }
   #hero ul {
+    grid-row: 1/2;
     grid-column: 2/3;
   }
   #hero h1 {
@@ -569,7 +557,12 @@ button {
   }
   #hero #profile-pic {
     grid-column: 2/3;
+    grid-row: 2/4;
     height: 65vh;
+  }
+  #hero .contact-email {
+    margin-top: auto;
+    grid-row: 3/4;
   }
 
   #projects {
