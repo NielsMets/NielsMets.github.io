@@ -160,7 +160,7 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -255,6 +255,7 @@ html {
 .menu-open nav #full-menu {
   height: 93vh;
   display: flex;
+  justify-content: center;
 }
 .menu-open nav #full-menu a {
   display: block;
@@ -404,7 +405,7 @@ html {
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
 #certificates .certificate h3 {
-  font-size: 40px;
+  font-size: 2.5em;
   grid-row: 1/2;
   grid-column: 2/3;
   margin-right: 0.5em;
@@ -422,8 +423,8 @@ html {
 #certificates .certificate .circle {
   background-color: #442e83;
   border-radius: 100%;
-  height: 48px;
-  width: 48px;
+  height: 3rem;
+  width: 3rem;
 }
 
 @media screen and (min-width: 768px) {
