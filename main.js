@@ -1,32 +1,26 @@
 class ContactEmail {
   constructor() {
-    this.contactEmail = document.getElementsByClassName("contact-email");
+    this.copyEmail = document.getElementsByClassName("copy-email");
     this.events();
   }
 
   events() {
-    for (let i = 0; i < this.contactEmail.length; i++) {
-      this.contactEmail[i].addEventListener(
-        "mouseover",
-        this.emailHoverEnter(i)
-      );
-      this.contactEmail[i].addEventListener(
-        "mouseleave",
-        this.emailHoverExit(i)
-      );
-      this.contactEmail[i].addEventListener("click", this.emailClipboard);
+    for (let i = 0; i < this.copyEmail.length; i++) {
+      this.copyEmail[i].addEventListener("mouseover", this.emailHoverEnter(i));
+      this.copyEmail[i].addEventListener("mouseleave", this.emailHoverExit(i));
+      this.copyEmail[i].addEventListener("click", this.emailClipboard);
     }
   }
 
   emailHoverEnter = (i) => {
     return () => {
-      this.contactEmail[i].children[1].textContent = "Click to copy!";
+      this.copyEmail[i].children[1].textContent = "Click to copy!";
     };
   };
 
   emailHoverExit = (i) => {
     return () => {
-      this.contactEmail[i].children[1].textContent = "Metsniels@gmail.com";
+      this.copyEmail[i].children[1].textContent = "Metsniels@gmail.com";
     };
   };
 
