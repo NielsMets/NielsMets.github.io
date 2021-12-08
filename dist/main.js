@@ -1,6 +1,5 @@
 class ContactEmail {
   constructor() {
-    alert("yo");
     this.copyEmail = document.getElementsByClassName("copy-email");
     this.events();
   }
