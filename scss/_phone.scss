@@ -49,6 +49,7 @@ html {
   color: white;
   border-color: white;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .no-scroll {
@@ -94,6 +95,7 @@ html {
         width: 30%;
         margin: auto;
         text-align: center;
+        padding: 0;
       }
     }
   }
@@ -107,6 +109,11 @@ html {
       display: flex;
       a {
         display: block;
+      }
+    }
+    .menu-toggle {
+      img {
+        content: url("./images/menu-close.svg");
       }
     }
   }
@@ -142,8 +149,8 @@ html {
 
 #hero {
   gap: 10px;
-  min-height: 100vh;
-  margin-top: 8px;
+  min-height: 95vh;
+  padding-top: 8px;
   margin-bottom: 0;
   ul {
     display: flex;

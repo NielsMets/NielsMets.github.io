@@ -184,6 +184,7 @@ html {
   color: white;
   border-color: white;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .no-scroll {
@@ -232,6 +233,7 @@ html {
   width: 30%;
   margin: auto;
   text-align: center;
+  padding: 0;
 }
 
 .menu-open nav {
@@ -243,6 +245,9 @@ html {
 }
 .menu-open nav #full-menu a {
   display: block;
+}
+.menu-open nav .menu-toggle img {
+  content: url("./images/menu-close.svg");
 }
 
 .icon-email {
@@ -272,8 +277,8 @@ html {
 
 #hero {
   gap: 10px;
-  min-height: 100vh;
-  margin-top: 8px;
+  min-height: 95vh;
+  padding-top: 8px;
   margin-bottom: 0;
 }
 #hero ul {
@@ -468,6 +473,7 @@ html {
   }
 
   #hero {
+    margin-top: 3em;
     box-sizing: border-box;
   }
   #hero ul {
@@ -539,6 +545,9 @@ button {
     width: 66%;
   }
 
+  #hero {
+    margin-top: 6em;
+  }
   #hero ul {
     grid-column: 2/3;
   }
