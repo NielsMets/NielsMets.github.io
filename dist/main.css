@@ -193,9 +193,9 @@ html {
 .main-grid {
   display: grid;
   grid-auto-rows: minmax(min-content, max-content);
-  gap: 10px;
+  gap: 40px 10px;
   margin: 0 10px;
-  padding-top: 1em;
+  margin-bottom: 12vh;
 }
 .main-grid h2 {
   margin-bottom: 0.5em;
@@ -212,34 +212,37 @@ html {
   grid-template-rows: auto 7vh;
 }
 .menu nav #full-menu {
-  display: none;
+  height: 0px;
   flex-direction: column;
+  transition-duration: 0.4s;
 }
 .menu nav #full-menu a {
+  display: none;
   text-decoration: none;
   font-size: 48px;
   margin: 0.4em 10px;
 }
-.menu .phone-menu {
+.menu nav .phone-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 7vh;
 }
-.menu .phone-menu * {
+.menu nav .phone-menu * {
   width: 30%;
   margin: auto;
   text-align: center;
 }
 
-.menu-open {
-  height: 100vh;
-}
 .menu-open nav {
   display: grid;
 }
 .menu-open nav #full-menu {
+  height: 93vh;
   display: flex;
+}
+.menu-open nav #full-menu a {
+  display: block;
 }
 
 .icon-email {
@@ -268,7 +271,9 @@ html {
 }
 
 #hero {
+  gap: 10px;
   min-height: 100vh;
+  margin-top: 8px;
   margin-bottom: 0;
 }
 #hero ul {
@@ -297,20 +302,36 @@ html {
 }
 
 #projects .project {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   color: black;
   height: 445px;
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
-#projects .project p {
-  margin-bottom: 4vh;
+#projects .project h4,
+#projects .project h5,
+#projects .project p,
+#projects .project a {
+  margin: 0 1.5rem;
+}
+#projects .project h4 {
+  margin: 1em 0 0.2em 1.5rem;
 }
 #projects .project a {
-  margin-top: 5em;
-  color: black;
+  background-color: #442e83;
+  text-decoration: none;
+  padding: 0.8em 1.6em;
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: 24px;
+  transition: background-color 0.2s;
+}
+#projects .project a:hover {
+  background-color: #6148a8;
 }
 #projects .project .project-pic {
-  margin-bottom: 4vh;
+  margin: 2em 0 1.5em 0;
   height: 40%;
   background-size: cover;
   background-position: center;
@@ -345,6 +366,9 @@ html {
   margin-bottom: 1em;
   min-height: 4em;
 }
+#tools .tool a {
+  margin-top: auto;
+}
 
 #certificates .certificate {
   display: grid;
@@ -376,10 +400,6 @@ html {
   width: 48px;
 }
 
-#contact {
-  margin-bottom: 12vh;
-}
-
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 130px;
@@ -399,7 +419,7 @@ html {
 
   .main-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 5px 20px;
+    gap: 35px 20px;
     margin: 0 40px;
     padding-top: 4em;
   }
@@ -411,9 +431,6 @@ html {
     top: 0;
     bottom: auto;
     height: unset;
-  }
-  .menu .phone-menu {
-    display: none;
   }
   .menu nav {
     display: block;
@@ -427,6 +444,7 @@ html {
     justify-content: space-around;
   }
   .menu nav #full-menu a {
+    display: unset;
     padding: 0.7em;
     font-weight: 300;
     width: 100%;
@@ -437,13 +455,16 @@ html {
   .menu nav #full-menu a:hover {
     font-weight: 700;
   }
+  .menu nav .phone-menu {
+    display: none;
+  }
 
   .contact-email {
     grid-column: 1/3;
   }
 
   #hero {
-    margin-top: 3em;
+    box-sizing: border-box;
   }
   #hero ul {
     grid-column: 2/3;
@@ -458,6 +479,7 @@ html {
     grid-column: 2/3;
   }
   #hero .contact-email {
+    margin: 0;
     display: flex;
   }
 
@@ -490,7 +512,7 @@ button {
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1290px;
-    gap: 10px 30px;
+    gap: inherit 30px;
     margin: 2em auto 6em auto;
   }
   .main-grid h2 {

@@ -20,7 +20,7 @@
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1290px;
-    gap: 10px 30px;
+    gap: inherit 30px;
     margin: 2em auto 6em auto;
     h2 {
       grid-column: 1/3;
