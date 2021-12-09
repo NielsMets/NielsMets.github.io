@@ -91,12 +91,12 @@ a {
       align-items: center;
       height: 7vh;
       & * {
-        display: flex;
-        width: 60%;
-        height: 70%;
+        box-sizing: border-box;
+        width: 30%;
         margin: auto;
         text-align: center;
-        padding: 0;
+        padding: 0.1em;
+        margin: auto;
         .email-popup {
           display: none;
           position: fixed;

@@ -229,12 +229,12 @@ a {
   height: 7vh;
 }
 .menu nav .phone-menu * {
-  display: flex;
-  width: 60%;
-  height: 70%;
+  box-sizing: border-box;
+  width: 30%;
   margin: auto;
   text-align: center;
-  padding: 0;
+  padding: 0.1em;
+  margin: auto;
 }
 .menu nav .phone-menu * .email-popup {
   display: none;
