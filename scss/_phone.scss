@@ -1,3 +1,10 @@
+html {
+  background-color: #6148a8;
+  color: white;
+  border-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
 h1,
 h2,
 a {
@@ -44,14 +51,6 @@ a {
   color: white;
 }
 
-html {
-  background-color: #6148a8;
-  color: white;
-  border-color: white;
-  font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
-}
-
 .no-scroll {
   overflow-y: hidden;
 }
@@ -92,7 +91,9 @@ html {
       align-items: center;
       height: 7vh;
       & * {
-        width: 30%;
+        display: flex;
+        width: 60%;
+        height: 70%;
         margin: auto;
         text-align: center;
         padding: 0;
@@ -138,16 +139,6 @@ html {
   }
 }
 
-.icon-email {
-  display: flex;
-  padding: 0.4em 0.6em;
-  background-color: #442e83;
-  img {
-    height: 2em;
-    width: 2em;
-  }
-}
-
 .contact-email {
   display: flex;
   grid-column: 1/2;
@@ -162,6 +153,15 @@ html {
   &:hover {
     p {
       font-weight: 700;
+    }
+  }
+  .icon-email {
+    display: flex;
+    padding: 0.4em 0.6em;
+    background-color: #442e83;
+    img {
+      height: 2em;
+      width: 2em;
     }
   }
 }

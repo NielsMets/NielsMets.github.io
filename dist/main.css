@@ -133,6 +133,13 @@ table {
   border-spacing: 0;
 }
 
+html {
+  background-color: #6148a8;
+  color: white;
+  border-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
 h1,
 h2,
 a {
@@ -179,14 +186,6 @@ a {
   color: white;
 }
 
-html {
-  background-color: #6148a8;
-  color: white;
-  border-color: white;
-  font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
-}
-
 .no-scroll {
   overflow-y: hidden;
 }
@@ -230,7 +229,9 @@ html {
   height: 7vh;
 }
 .menu nav .phone-menu * {
-  width: 30%;
+  display: flex;
+  width: 60%;
+  height: 70%;
   margin: auto;
   text-align: center;
   padding: 0;
@@ -264,16 +265,6 @@ html {
   content: url("./images/menu-close.svg");
 }
 
-.icon-email {
-  display: flex;
-  padding: 0.4em 0.6em;
-  background-color: #442e83;
-}
-.icon-email img {
-  height: 2em;
-  width: 2em;
-}
-
 .contact-email {
   display: flex;
   grid-column: 1/2;
@@ -287,6 +278,15 @@ html {
 }
 .contact-email:hover p {
   font-weight: 700;
+}
+.contact-email .icon-email {
+  display: flex;
+  padding: 0.4em 0.6em;
+  background-color: #442e83;
+}
+.contact-email .icon-email img {
+  height: 2em;
+  width: 2em;
 }
 
 #hero {
@@ -428,6 +428,10 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
   h1 {
     font-size: 130px;
   }
