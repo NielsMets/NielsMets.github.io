@@ -1,41 +1,35 @@
-class ContactEmail {
-  constructor() {
-    this.copyEmail = document.getElementsByClassName("copy-email");
-    this.events();
-  }
+// class ContactEmail {
+//   constructor() {
+//     this.copyEmail = document.getElementsByClassName("copy-email");
+//     this.events();
+//   }
 
-  events() {
-    for (let i = 0; i < this.copyEmail.length; i++) {
-      if (!this.copyEmail[i].classList.contains("icon-email")) {
-        this.copyEmail[i].addEventListener(
-          "mouseover",
-          this.emailHoverEnter(i)
-        );
-        this.copyEmail[i].addEventListener(
-          "mouseleave",
-          this.emailHoverExit(i)
-        );
-      }
-      this.copyEmail[i].addEventListener("click", this.emailClipboard);
-    }
-  }
+//   events() {
+//     for (let i = 0; i < this.copyEmail.length; i++) {
+//       if (!this.copyEmail[i].classList.contains("icon-email")) {
+//         this.copyEmail[i].addEventListener("mouseover", this.emailHoverEnter(i));
+//         this.copyEmail[i].addEventListener("mouseleave", this.emailHoverExit(i));
+//       }
+//       this.copyEmail[i].addEventListener("click", this.emailClipboard);
+//     }
+//   }
 
-  emailHoverEnter = (i) => {
-    return () => {
-      this.copyEmail[i].children[1].textContent = "Click to copy!";
-    };
-  };
+//   emailHoverEnter = (i) => {
+//     return () => {
+//       this.copyEmail[i].children[1].textContent = "Click to copy!";
+//     };
+//   };
 
-  emailHoverExit = (i) => {
-    return () => {
-      this.copyEmail[i].children[1].textContent = "Metsniels@gmail.com";
-    };
-  };
+//   emailHoverExit = (i) => {
+//     return () => {
+//       this.copyEmail[i].children[1].textContent = "Metsniels@gmail.com";
+//     };
+//   };
 
-  emailClipboard = () => {
-    navigator.clipboard.writeText("metsniels@gmail.com");
-  };
-}
+//   emailClipboard = () => {
+//     navigator.clipboard.writeText("metsniels@gmail.com");
+//   };
+// }
 
 class Menu {
   constructor() {
@@ -67,4 +61,4 @@ class Menu {
 }
 
 const menu = new Menu();
-const contactEmail = new ContactEmail();
+// const contactEmail = new ContactEmail();

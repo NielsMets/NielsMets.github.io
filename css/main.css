@@ -1,0 +1,826 @@
+@charset "UTF-8";
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Satoshi", sans-serif;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 122%;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 112%;
+  letter-spacing: 0.01em;
+}
+
+h3,
+button {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+#full-menu a {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h4,
+a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 170%;
+  letter-spacing: 0.04em;
+}
+
+p,
+input,
+textarea {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 125%;
+  letter-spacing: 0.04em;
+}
+
+a {
+  color: #4846d8;
+}
+
+button {
+  background-color: #4846d8;
+  color: white;
+  border: none;
+  padding: 0.8em 1.6em;
+}
+button:hover {
+  background-color: #5c5aeb;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.main-grid {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 25px 10px;
+  margin: 0 10px;
+  margin-bottom: 8rem;
+}
+.main-grid .section-header {
+  margin-bottom: 0.5em;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.menu nav {
+  height: 100%;
+  grid-template-rows: auto 7vh;
+}
+.menu nav .logo {
+  display: none;
+}
+.menu nav #full-menu {
+  height: 0px;
+  flex-direction: column;
+  transition-duration: 0.4s;
+}
+.menu nav #full-menu a {
+  color: black;
+  display: none;
+  text-decoration: none;
+  margin: 0.4em 10px;
+}
+.menu nav .phone-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+}
+.menu nav .phone-menu * {
+  box-sizing: border-box;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding: 0.1em;
+  margin: auto;
+}
+
+.menu-open nav {
+  display: grid;
+}
+.menu-open nav #full-menu {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+}
+.menu-open nav #full-menu a {
+  display: block;
+}
+.menu-open nav .menu-toggle img {
+  content: url("../images/menu-close.svg");
+  z-index: 40;
+}
+
+#hero {
+  min-height: 95vh;
+  padding-top: 8px;
+}
+#hero h1 {
+  margin-top: auto;
+}
+#hero h3 {
+  color: #4846d8;
+  border-color: #4846d8;
+}
+#hero a {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+#hero #profile-pic {
+  background-image: url("../images/pic.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+#projects .project-category {
+  display: grid;
+  gap: 25px 10px;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #e5e5e5;
+}
+#projects .project-category .project {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  height: 40rem;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
+}
+#projects .project-category .project h4,
+#projects .project-category .project h5,
+#projects .project-category .project p,
+#projects .project-category .project a {
+  margin: 0 1.5rem;
+}
+#projects .project-category .project h3 {
+  margin: 1em 0 0.2em 1.5rem;
+}
+#projects .project-category .project a {
+  color: white;
+  background-color: #4846d8;
+  text-decoration: none;
+  padding: 0.8em 1.6em;
+  align-self: flex-start;
+  margin: 2em 1.5rem;
+  transition: background-color 0.2s;
+}
+#projects .project-category .project a:hover {
+  background-color: #5c5aeb;
+}
+#projects .project-category .project .project-pic {
+  margin: 2em 0 1.5em 0;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+}
+
+#project-1 {
+  background-image: url("../images/project-1.jpg");
+}
+
+#project-2 {
+  background-image: url("../images/project-2.jpg");
+}
+
+#project-3 {
+  background-image: url("../images/project-3.jpg");
+}
+
+#tools {
+  grid-template-columns: 1fr 1fr;
+}
+#tools .section-header {
+  grid-column: 1/3;
+}
+#tools .tool {
+  display: flex;
+  flex-direction: column;
+}
+#tools .tool h2 {
+  width: 90%;
+  padding-bottom: 0.1em;
+  margin-bottom: 0;
+  border-bottom: 3px solid black;
+}
+#tools .tool h3 {
+  margin: 0.5em 0 0.6em 0;
+}
+#tools .tool p {
+  margin-bottom: 1em;
+  min-height: 6em;
+}
+#tools .tool a {
+  margin-top: auto;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+#certificates .certificate {
+  background-color: #4846d8;
+  min-height: 10%;
+  padding: 1.5em;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 6fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
+}
+#certificates .certificate h2 {
+  color: white;
+  font-size: 3.5rem;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-right: 0.5em;
+  padding-right: 0.3em;
+}
+#certificates .certificate h3 {
+  display: inline-block;
+  color: #4846d8;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.5em;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+#certificates .certificate p {
+  color: white;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 5em;
+}
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+}
+#contact textarea {
+  margin-top: 2.5em;
+}
+#contact button {
+  margin-top: 1em;
+}
+#contact .contact-info {
+  margin-top: 3em;
+}
+#contact .contact-info .info {
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  #full-menu a {
+    font-size: 24px;
+  }
+
+  .no-scroll {
+    overflow-y: unset;
+  }
+
+  .main-grid {
+    max-width: 95vw;
+    grid-template-columns: 1fr;
+    gap: 35px 40px;
+    margin: 2em auto;
+    padding-top: 5rem;
+  }
+  .main-grid .section-header {
+    grid-column: 1/2;
+  }
+
+  .menu {
+    margin: auto;
+    top: 0;
+    bottom: auto;
+    height: unset;
+    padding: 0;
+  }
+  .menu nav {
+    max-width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .menu nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  .menu nav .logo img {
+    height: 55%;
+  }
+  .menu nav #full-menu {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    height: unset;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .menu nav #full-menu a {
+    width: 60%;
+    display: unset;
+    padding: 0.8em 1em;
+    text-align: center;
+  }
+  .menu nav #full-menu a:hover {
+    font-weight: 700;
+  }
+  .menu nav #full-menu #menu-contact {
+    color: white;
+    background-color: #4846d8;
+    margin-right: 0;
+    margin-left: 1.2em;
+  }
+  .menu nav #full-menu #menu-contact:hover {
+    background-color: #5c5aeb;
+  }
+  .menu nav .phone-menu {
+    display: none;
+  }
+
+  #hero {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4em;
+  }
+  #hero h1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-bottom: 0.2em;
+  }
+  #hero h5 {
+    grid-row: 3/4;
+  }
+  #hero a {
+    grid-row: 4/5;
+    font-size: 2rem;
+  }
+  #hero #profile-pic {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    width: 100%;
+    margin: auto;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+  #projects .project-category {
+    grid-template-columns: 1fr 1fr;
+  }
+  #projects .project-category .project-category-header {
+    grid-column: 1/3;
+  }
+
+  #tools {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #tools .section-header {
+    grid-column: 1/5;
+  }
+  #tools .tool {
+    margin-bottom: 2rem;
+  }
+
+  #certificates {
+    padding-top: 3rem;
+  }
+  #certificates .section-header {
+    grid-column: 1/2;
+  }
+
+  #contact {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+
+  br {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3,
+button {
+    font-size: 2rem;
+  }
+
+  h4,
+a {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p,
+input,
+textarea {
+    font-size: 1.5rem;
+  }
+
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 127rem;
+    gap: 2.5rem 3.4rem;
+    margin: 2rem inherit 6rem inherit;
+    padding: 1rem;
+    padding-top: 5rem;
+  }
+  .main-grid h2 {
+    grid-column: 1/3;
+    margin-bottom: 0.8em;
+  }
+
+  .menu nav {
+    max-width: 127rem;
+    margin: auto;
+    padding: 1rem;
+  }
+  .menu nav .logo img {
+    height: 70%;
+  }
+  .menu nav #full-menu {
+    width: 50%;
+  }
+  .menu nav #full-menu a {
+    margin: 0;
+  }
+
+  #hero {
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 12em;
+    min-height: 95vh;
+    grid-template-rows: 1fr auto auto 5fr;
+  }
+  #hero h1 {
+    margin-top: 0;
+  }
+  #hero a {
+    margin-top: 2em;
+  }
+  #hero h1,
+#hero h5,
+#hero a {
+    grid-column: 1/4;
+  }
+  #hero #profile-pic {
+    grid-row: 1/5;
+    grid-column: 4/6;
+    height: 90vh;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+  #projects .project-category {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 3.4rem;
+  }
+  #projects .project-category .project-category-header {
+    grid-column: 1/4;
+  }
+
+  #tools {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #tools .section-header {
+    grid-column: 1/6;
+  }
+
+  #certificates {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #certificates .section-header {
+    grid-column: 1/3;
+  }
+
+  #contact {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #contact form {
+    grid-column: 3/6;
+    grid-row: 2/3;
+  }
+  #contact .contact-info {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 0.625vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
