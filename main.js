@@ -48,6 +48,8 @@ class Menu {
     for (let i = 0; i < this.menuItems.length; i++) {
       this.menuItems[i].addEventListener("click", this.toggleMenu);
     }
+
+    document.addEventListener("scroll", this.scrollMenu);
   }
 
   toggleMenu = () => {
@@ -57,6 +59,10 @@ class Menu {
 
   toggleScroll = () => {
     this.body.classList.toggle("no-scroll");
+  };
+
+  scrollMenu = () => {
+    this.menu[0].classList.toggle("menu-scroll", window.scrollY > 0);
   };
 }
 

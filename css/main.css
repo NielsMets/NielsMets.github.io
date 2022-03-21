@@ -619,6 +619,11 @@ textarea {
     margin-bottom: 0.8em;
   }
 
+  .menu {
+    transition: 0.1s;
+    position: sticky;
+    top: 3rem;
+  }
   .menu nav {
     max-width: 127rem;
     padding: 0 1rem;
@@ -628,6 +633,10 @@ textarea {
   }
   .menu nav #full-menu {
     width: 50%;
+  }
+
+  .menu-scroll {
+    top: 0;
   }
 
   #hero {
