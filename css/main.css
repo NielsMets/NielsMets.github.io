@@ -172,6 +172,7 @@ h4,
 a {
   font-family: "Satoshi-medium";
   font-size: 16px;
+  letter-spacing: 0.01em;
 }
 
 h5 {
@@ -288,8 +289,7 @@ button:hover {
 }
 #hero a {
   font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  margin-bottom: 4rem;
 }
 #hero #profile-pic {
   background-image: url("../images/pic.png");
@@ -310,7 +310,7 @@ button:hover {
   flex-direction: column;
   background-color: white;
   color: black;
-  height: 40rem;
+  height: 45rem;
   box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
 }
 #projects .project-category .project h4,
@@ -320,7 +320,10 @@ button:hover {
   margin: 0 1.5rem;
 }
 #projects .project-category .project h3 {
-  margin: 1em 0 0.2em 1.5rem;
+  margin: 1em 0 0.5em 1.5rem;
+}
+#projects .project-category .project p {
+  min-height: 2em;
 }
 #projects .project-category .project a {
   color: white;
@@ -336,20 +339,28 @@ button:hover {
 }
 #projects .project-category .project .project-pic {
   margin: 2em 0 1.5em 0;
-  height: 40%;
+  height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-#project-1 {
-  background-image: url("../images/project-1.jpg");
+#project-d1 {
+  background-image: url("../images/magazine-layout.png");
 }
 
-#project-2 {
+#project-d2 {
   background-image: url("../images/project-2.jpg");
 }
 
-#project-3 {
+#project-d3 {
+  background-image: url("../images/japan-travel-web.png");
+}
+
+#project-c1 {
+  background-image: url("../images/project-1.jpg");
+}
+
+#project-c2 {
   background-image: url("../images/project-3.jpg");
 }
 
@@ -435,7 +446,7 @@ button:hover {
   margin-top: 1em;
 }
 #contact .contact-info {
-  margin-top: 3em;
+  margin-top: 2.5em;
 }
 #contact .contact-info .info {
   margin-bottom: 3em;
