@@ -564,11 +564,6 @@ button:hover {
   #certificates .certificate h2 {
     font-size: 3.5em;
   }
-  #certificates .certificate h3 {
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-  }
 
   #contact {
     margin-bottom: 4rem;
